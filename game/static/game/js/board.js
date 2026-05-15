@@ -1166,6 +1166,13 @@
                 
                 startNewGame(mode, 'white', diff);
             };
+            
+            const gameOverHomeBtn = document.getElementById('gameOverHomeBtn');
+            if (gameOverHomeBtn) {
+                gameOverHomeBtn.onclick = () => {
+                   window.location.href = '/';
+                };
+            }
 
             // Theme Switcher
             const themeBtns = document.querySelectorAll('.theme-btn');
